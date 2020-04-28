@@ -1,0 +1,89 @@
+html,
+body {
+    margin: 0px;
+    scroll-behavior: smooth;
+}
+
+#nv {
+    min-height: 15vh;
+    border-bottom: 1px solid #eeeeee21;
+}
+
+.navlink {
+    color: white !important;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.nav-item {
+    padding: 10px;
+}
+
+#bstart {
+    height: 100vh;
+    background-image: url("../assets/bg/bg7f.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    padding: none !important;
+}
+
+.overlaydark {
+    height: inherit;
+    font-family: Raleway;
+    font-weight: bold;
+    color: white;
+    width: inherit;
+    margin-top: -15vh;
+    text-shadow: 2px 5px 5px #000;
+    font-size: 5vw;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+
+.contentinbstart {
+    height: inherit;
+    width: inherit;
+    text-align: center;
+    display: flex;
+    align-items: center;
+
+}
+
+.div2,
+    {
+    min-height: 100vh;
+    height: auto;
+    width: 100vw;
+}
+
+#lo {
+    padding-top: 50px;
+    height: inherit;
+    width: auto;
+
+}
+
+#div3 {
+    height: auto;
+}
+
+.span4 img {
+    margin-right: 10px;
+}
+
+.span4 .img-left {
+    float: left;
+}
+
+.span4 .img-right {
+    float: right;
+}
+
+#div4 {
+    min-height: 60vh;
+    height: auto;
+}
