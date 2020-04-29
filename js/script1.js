@@ -50,9 +50,9 @@ function fetchData() {
                 } else {
                     var image = childData.image
                 }
-                assignedid1 = Math.floor(Math.random() * 1E5) + "a"
+                window.assignedid1 = Math.floor(Math.random() * 1E5) + "a"
                 let parentele = document.createElement("div")
-                assignedid = Math.floor(Math.random() * 1E5) + "b"
+                window.assignedid = Math.floor(Math.random() * 1E5) + "b"
                 let ch = document.createElement("div")
                 ch.classList.add("card-header", "bg-primary", "text-light")
                 cf = document.createElement("div")
@@ -88,62 +88,15 @@ function fetchData() {
 
 
 function doThis(name, cl, section, content, title, image, assignedid, assignedid1) {
-    assignedid = assignedid + ""
-    assignedid1 = assignedid1 + ""
-    modal = document.createElement("div")
-    modal.id = assignedid
-    $(modal).attr("role", "dialog")
-    $(modal).attr("class", "modal fade")
-
-    modaldialoge = document.createElement("div")
-    modaldialoge.classList.add("modal-dialog")
-
-    modalcontent = document.createElement("div")
-    modalcontent.classList.add("modal-content")
-
-    modalheader = document.createElement("div")
-    modalheader.classList.add("modal-header")
-
-    btn = document.createElement("button")
-    btn.classList.add("close")
-    btn.setAttribute("data-dismiss", assignedid)
-    btn.setAttribute("value", "&times;")
-
-    titt = document.createElement("h4")
-    titt.classList.add("modal-title")
-    titt.innerHTML = title
-
-    modalheader.appendChild(btn)
-    modalheader.appendChild(titt)
-
-    modalcontent.appendChild(modalheader)
-
-    mb = document.createElement("div")
-    con = document.createElement("p")
-    mb.classList.add("modal-body")
-
-    con.innerHTML = content
-    mb.appendChild(con)
-    modalcontent.appendChild(mb)
-
-    mf = document.createElement("div")
-    mf.classList.add("modal-footer")
-    fb = document.createElement("button")
-    fb.setAttribute("data-dismiss", assignedid)
-    fb.setAttribute("value", "close")
-
-    fb.classList.add("btn", "btn-default")
-
-    mf.appendChild(fb)
-
-    modalcontent.appendChild(mf)
-    modaldialoge.appendChild(modalcontent)
-    modal.appendChild(modaldialoge)
-
-    tt = document.getElementById(assignedid1)
-    tt.setAttribute("data-toggle", "modal")
-    ii = "#" + assignedid
-    tt.setAttribute("data-target", ii)
-
-    document.getElementById("coo").appendChild(modal)
+    document.getElementById(assignedid1).addEventListener("click", function () {
+        $(".sme").hide();
+        $("#loa").show()
+        $("#chh").text(title)
+        $("#imm").attr("src", image)
+        $(".cooo").text(content)
+    });
+    document.getElementById("cloo").addEventListener("click", function () {
+        $(".sme").show();
+        $("#loa").hide()
+    });
 }

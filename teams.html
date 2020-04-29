@@ -9,7 +9,6 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <style>
         body {
             background-color: #eee;
@@ -25,6 +24,14 @@
 
         #ided img {
             width: 100%;
+        }
+
+        #loa {
+            display: none;
+        }
+
+        .cooo {
+            padding-top: 25px;
         }
     </style>
 </head>
@@ -50,16 +57,37 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid sme" id="coo">
+    <div class="container-fluid sme">
         <div class="row p-3" id="ided">
 
         </div>
+    </div><br>
+    <div class="container" id="loa">
+        <div class="row">
+            <div class="col-12">
+                <div class="card text-justify">
+                    <div class="card-header" id="chh" style="font-size: 150%;">
+
+                    </div>
+                    <div class="card-body p-5" id="cbb">
+                        <center><img class="card-img-top img-fluid w-75" id="imm"></center>
+                        <center>
+                            <div class="cooo w-75 text-justify"></div>
+                        </center>
+                    </div>
+                    <div class="card-footer text-right" id="cff">
+                        <button class="btn btn-primary" id="cloo">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+
     <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-database.js"></script>
-
     <script defer src="js/script1.js"></script>
+
 </body>
 
 </html>
