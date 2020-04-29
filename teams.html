@@ -8,17 +8,29 @@
     <title>Document</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <style>
+        body {
+            background-color: #eee;
+        }
+
         .btn-google {
             color: white;
             background-color: #dc3545 !important;
             font-family: Raleway;
         }
+
+
+
+        #ided img {
+            width: 100%;
+        }
     </style>
 </head>
 
 <body>
-    <div class="container">
+    <div class="container lgf">
         <div class="row p-5">
             <div class="col-12">
                 <div class="card">
@@ -29,7 +41,7 @@
                         <div class="card-title text-center">
                             Available Providers
                         </div><br>
-                        <button class="btn btn-danger btn-lg btn-google" type="submit"><i
+                        <button class="btn btn-danger btn-lg btn-google" onclick="login()" type="submit"><i
                                 class="fab fa-google mr-2"></i>
                             Sign in with Google
                         </button>
@@ -38,7 +50,16 @@
             </div>
         </div>
     </div>
+    <div class="container-fluid sme" id="coo">
+        <div class="row p-3" id="ided">
 
+        </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-database.js"></script>
+
+    <script defer src="js/script1.js"></script>
 </body>
 
 </html>
